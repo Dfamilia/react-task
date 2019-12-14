@@ -1,0 +1,14 @@
+body{
+    width: auto;
+    height: auto;
+    background-image: url('../img/background1.jpg');
+
+
+}
+
+#app_container{
+    margin: 0 auto;
+    width: 500px;
+
+
+}
