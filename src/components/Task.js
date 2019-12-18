@@ -12,7 +12,7 @@ export default class Task extends Component {
         //si done =true contatena la clase complete al className del div con if-ternario
         return <article className={"task_article" + ((task.done) ? " complete":"") }>
             <div className="task_header">
-                <header>{task.title}</header>
+                <header>{task.id}-{task.title}</header>
                 <section className="task_options">
                     <input type="checkbox" onChange={this.props.checkDone.bind(this, task.id)}/>
                     <button id="button" onClick={this.props.deleteTask.bind(this, task.id)}> x </button>

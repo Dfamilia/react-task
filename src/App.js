@@ -32,6 +32,7 @@ class App extends Component {
 
   //change a task to complete
   checkDone= (id) => {
+    
     const newTask = this.state.TasksCollection.map(task => {
       if(task.id === id){
         task.done = !task.done;
