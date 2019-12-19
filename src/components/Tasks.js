@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { render } from '@testing-library/react';
+import Task from './Task';
+import TaskForm from './TaskForm';
 
 export default class Tasks extends Component {
     render(){
-        return (this.props.tasks.map(task => {
-            // <Task task={task} />
-        })
+        // return a Task's component list
+        const taskGroup = this.props.tasks.map(task => <Task task={task} key={task.id} handlerDeleteTask={this.props.handlerDeleteTask} />);
+        return (
+            <div className="container">
+                <div className="row">
+                     <TaskForm handlerAddTask={this.props.handlerAddTask}/>
+                    {taskGroup}
+                </div>
+            </div>
         )
     }
 }

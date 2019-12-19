@@ -1,20 +1,30 @@
 {
     "todos":[
         {
+            "id": 0,
             "title": "Task 1",
             "responsible": "Mark",
             "description": "Lorem impsum 1",
             "priority": "low"
         },
         {
+            "id": 1,
             "title": "Task 2",
             "responsible": "Ryan",
             "description": "Lorem impsum 2",
             "priority": "medium"
         },
         {
+            "id": 2,
             "title": "Task 3",
             "responsible": "Joseph",
+            "description": "Lorem impsum 3",
+            "priority": "high"
+        },
+        {
+            "id": 3,
+            "title": "Task 4",
+            "responsible": "Maria",
             "description": "Lorem impsum 3",
             "priority": "high"
         }
